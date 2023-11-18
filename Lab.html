@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Columns and Eight Rows</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th colspan = "3"><span style="color: rgb(44, 44, 87);">About -- 112306070</span></th>
+    </tr>
+    <tr>
+        <td rowspan ="3">
+            <img src="personalpic.png" alt="personal photo" height="100">
+            <br>personal photo</p>
+        </td>
+        <td colspan = "2">
+            <form>
+                Name: <input type="text" name="name">
+            </form>
+            <form>
+                Gender:
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form action="/action_page.php">
+                County:
+                    <select name="country">
+                        <option value="taipei" selected>Taipei</option>
+                        <option value="tainan">Tainan</option>
+                        <option value="taichung">Taichung</option>
+                        <option value="taoyuan">Taoyuan</option>
+                    </select>
+            </form>
+        </td>
+        <td>
+            <form action="/action_page.php">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan = "2">
+            <form>
+                E-mail
+                <input type="email" name="email" placeholder="name@domain.com">
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Hobby</td>
+        <td  colspan = "2">
+            <form action="/action_page.php" method="get">          
+                <input type="checkbox" name="hobby" value="swim"> Swimming
+                <input type="checkbox" name="hobby" value="volleyball"> Volleyball
+                <input type="checkbox" name="hobby" value="movie"> Movie
+                <input type="checkbox" name="hobby" value="game"> Game
+                <input type="checkbox" name="hobby" value="sleep"> sleep
+             </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Skill</td>
+        <td colspan = "2">
+            <form action="/action_page.php" method="get">          
+                <input type="checkbox" name="skill" value="java"> Java
+                <input type="checkbox" name="skill" value="html"> HTML
+                <input type="checkbox" name="skill" value="python"> Python
+                <input type="checkbox" name="skill" value="microsoftoffice"> Microsoft Office
+                <input type="checkbox" name="skill" value="premiere"> Premiere
+             </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Say Something</td>
+        <td colspan = "2">
+            <input type="text" name="saysomething" placeholder="Say something here.">
+        </td>
+    </tr>
+    <tr>
+        <td  colspan = "3">
+            <input type="submit" value="提交">
+            <input type="reset" value="重新">
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
